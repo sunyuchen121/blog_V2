@@ -12,15 +12,17 @@ from django_redis import get_redis_connection
 from django.views.decorators.cache import cache_page
 
 def index(request):
-    RedisConnection = get_redis_connection('default')
-    logger = logging.getLogger("collect")
-    logger.info(len(pickle.loads(RedisConnection.get('hotarticle'))))
-    articles = pickle.loads(RedisConnection.get('hotarticle'))
-    # 如果热门文章少于3 每次都查询更新缓存，如果>3个，每小时更新一次热文缓存
-    if len(articles) < 3:
-        articles = Article.objects.values().order_by('-read')[0:3]
-        if len(articles) > 3:
-            RedisConnection.set('hotarticle', pickle.dumps(articles), 60 * 60)
+    # logger = logging.getLogger("collect")
+    # logger.info(len(pickle.loads(get_redis_connection('default').get('hotarticle'))))
+    # RedisConnection = get_redis_connection('default')
+    #
+    # articles = pickle.loads(RedisConnection.get('hotarticle'))
+    # # 如果热门文章少于3 每次都查询更新缓存，如果>3个，每小时更新一次热文缓存
+    # if len(articles) < 3:
+    #     articles = Article.objects.values().order_by('-read')[0:3]
+    #     if len(articles) > 3:
+    #         RedisConnection.set('hotarticle', pickle.dumps(articles), 60 * 60)
+    articles = Article.objects.values().order_by('-read')[0:3]
     context = {'articles': articles}
     return render(request, 'index.html', context)
 
@@ -86,12 +88,13 @@ def article(request):
 
 
 def diary(request):
-    con = get_redis_connection('default')
-    try:
-        diarys = pickle.loads(con.get('diarys'))
-    except TypeError:
-        diarys = Diary.objects.values()
-        con.set('diarys', pickle.dumps(diarys), 5 * 60)
+    # con = get_redis_connection('default')
+    # try:
+    #     diarys = pickle.loads(con.get('diarys'))
+    # except TypeError:
+    #     diarys = Diary.objects.values()
+    #     con.set('diarys', pickle.dumps(diarys), 5 * 60)
+    diarys = Diary.objects.values()
     context = {'diarys': diarys}
     return render(request, 'diary.html', context)
 
@@ -103,21 +106,23 @@ def link(request):
 
 
 def message(request):
-    RedisConnection = get_redis_connection('default')
+    # RedisConnection = get_redis_connection('default')
     if request.method == 'GET':
         error = ''
         key = request.GET.get('key')
         if key:
             error = '留言内容不能为空'
-        try:
-            messages = pickle.loads(RedisConnection.get('message_list'))
-        except TypeError:
-            messages = Message.objects.values(
-                'body', 'create', 'user__username').order_by('-create')
-            RedisConnection.set(
-                'message_list',
-                pickle.dumps(messages),
-                6 * 60 * 60)
+        # try:
+        #     messages = pickle.loads(RedisConnection.get('message_list'))
+        # except TypeError:
+        #     messages = Message.objects.values(
+        #         'body', 'create', 'user__username').order_by('-create')
+        #     RedisConnection.set(
+        #         'message_list',
+        #         pickle.dumps(messages),
+        #         6 * 60 * 60)
+        messages = Message.objects.values(
+            'body', 'create', 'user__username').order_by('-create')
         context = {'messages': messages, 'error': error}
     elif request.method == 'POST':
         data = request.POST
@@ -125,7 +130,7 @@ def message(request):
             body, user = data['message_body'], request.session.get(
                 '_auth_user_id')
             Message.objects.create(user_id=user, body=body)
-            RedisConnection.delete('message_list')
+            # RedisConnection.delete('message_list')
             return redirect('/message/')
         else:
             return redirect('/message/?key=1')
