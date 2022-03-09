@@ -1,8 +1,9 @@
-/static/image/*
-/static_collect/image/*
+#/static/image/*
+/static_collect/image/
 /media/*
 venv
 .idea
 #myblog/settings.py
 db.sqlite3
 myblog/__pycache__/
+/collected_static

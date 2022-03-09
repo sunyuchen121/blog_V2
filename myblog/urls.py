@@ -35,4 +35,4 @@ urlpatterns = [
     path('comment/', comment),
     path('api/', include('openapi.urls'))
 
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
