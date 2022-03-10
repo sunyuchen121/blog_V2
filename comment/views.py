@@ -12,8 +12,10 @@ def comment(request):
         if data['body']:
             article_id, parent, reply_to, body, user = data['article_id'], data.get('parent'), data.get('targetUserId'), \
                                                        data['body'], request.session.get('_auth_user_id')
-            models.Comment.objects.create(article_id=article_id, parent_id=parent, reply_to_id=reply_to, user_id=user,
-                                          body=body)
+
+            models.Cccomment.objects.create(article_id=article_id, parent_id=parent, reply_to_id=reply_to, user_id=user,
+                                              body=body)
+
             return redirect('/read/' + article_id)
         elif not data['body'] and not 'parent' in data:
             article = data['article_id']

@@ -204,3 +204,520 @@ TypeError: 'FileSystemFinder' object is not callable
 [2022-03-09 21:22:52,328][MainThread:7996][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
 [2022-03-09 21:24:44,491][MainThread:4508][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
 [2022-03-09 21:30:13,080][MainThread:24164][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 18:37:24,148][MainThread:23228][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 18:37:39,176][Thread-1:1692][task_id:django.request][log.py:222][WARNING][Not Found: /favicon.ico]
+[2022-03-10 18:37:45,617][Thread-1:1692][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/css/base.css]
+[2022-03-10 18:37:45,619][Thread-2:15156][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/css/login.css]
+[2022-03-10 18:37:45,621][Thread-3:26960][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/css/responsive.css]
+[2022-03-10 18:38:33,157][Thread-3:26960][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/css/base.css]
+[2022-03-10 18:38:33,159][Thread-2:15156][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/css/dashboard.css]
+[2022-03-10 18:38:33,160][Thread-1:1692][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/css/responsive.css]
+[2022-03-10 18:38:39,544][Thread-2:15156][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/css/base.css]
+[2022-03-10 18:38:39,545][Thread-1:1692][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/css/changelists.css]
+[2022-03-10 18:38:39,548][Thread-4:2760][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/vendor/jquery/jquery.min.js]
+[2022-03-10 18:38:39,549][Thread-5:2512][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/jquery.init.js]
+[2022-03-10 18:38:39,551][Thread-2:15156][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/css/responsive.css]
+[2022-03-10 18:38:39,554][Thread-1:1692][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/admin/RelatedObjectLookups.js]
+[2022-03-10 18:38:39,555][Thread-4:2760][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/actions.min.js]
+[2022-03-10 18:38:39,556][Thread-6:5160][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/core.js]
+[2022-03-10 18:38:39,559][Thread-5:2512][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/urlify.js]
+[2022-03-10 18:38:39,561][Thread-2:15156][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/prepopulate.min.js]
+[2022-03-10 18:38:39,563][Thread-1:1692][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js]
+[2022-03-10 18:38:39,573][Thread-3:26960][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/css/responsive.css]
+[2022-03-10 18:38:40,638][Thread-3:26960][task_id:django.request][log.py:222][ERROR][Internal Server Error: /admin/mysite/article/add/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\loader_tags.py", line 188, in render
+    return template.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 992, in render
+    return render_value_in_context(output, context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 971, in render_value_in_context
+    value = str(value)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\html.py", line 373, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\forms\boundfield.py", line 33, in __str__
+    return self.as_widget()
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\forms\boundfield.py", line 92, in as_widget
+    return widget.render(
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\ckeditor\widgets.py", line 114, in render
+    renderer.render(
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\forms\renderers.py", line 30, in render
+    template = self.get_template(template_name)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\forms\renderers.py", line 36, in get_template
+    return self.engine.get_template(template_name)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\backends\django.py", line 36, in get_template
+    reraise(exc, self)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+[2022-03-10 18:40:18,530][Thread-3:26960][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/css/base.css]
+[2022-03-10 18:40:18,531][Thread-1:1692][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/css/changelists.css]
+[2022-03-10 18:40:18,533][Thread-5:2512][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/vendor/jquery/jquery.min.js]
+[2022-03-10 18:40:18,534][Thread-6:5160][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/jquery.init.js]
+[2022-03-10 18:40:18,535][Thread-4:2760][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/core.js]
+[2022-03-10 18:40:18,539][Thread-3:26960][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/css/responsive.css]
+[2022-03-10 18:40:18,540][Thread-1:1692][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/admin/RelatedObjectLookups.js]
+[2022-03-10 18:40:18,543][Thread-5:2512][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/actions.min.js]
+[2022-03-10 18:40:18,544][Thread-6:5160][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/urlify.js]
+[2022-03-10 18:40:18,547][Thread-7:24184][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/prepopulate.min.js]
+[2022-03-10 18:40:18,548][Thread-3:26960][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js]
+[2022-03-10 18:40:18,558][Thread-2:15156][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/css/responsive.css]
+[2022-03-10 18:40:21,545][Thread-2:15156][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/css/base.css]
+[2022-03-10 18:40:21,546][Thread-7:24184][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/css/forms.css]
+[2022-03-10 18:40:21,549][Thread-1:1692][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/vendor/jquery/jquery.min.js]
+[2022-03-10 18:40:21,551][Thread-8:14268][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/core.js]
+[2022-03-10 18:40:21,553][Thread-9:7044][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/actions.min.js]
+[2022-03-10 18:40:21,554][Thread-2:15156][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/css/responsive.css]
+[2022-03-10 18:40:21,556][Thread-7:24184][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/jquery.init.js]
+[2022-03-10 18:40:21,558][Thread-1:1692][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js]
+[2022-03-10 18:40:21,560][Thread-8:14268][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/admin/RelatedObjectLookups.js]
+[2022-03-10 18:40:21,560][Thread-9:7044][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/urlify.js]
+[2022-03-10 18:40:21,562][Thread-2:15156][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/prepopulate.min.js]
+[2022-03-10 18:40:21,569][Thread-2:15156][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/change_form.js]
+[2022-03-10 18:40:21,573][Thread-2:15156][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/prepopulate_init.js]
+[2022-03-10 18:40:21,574][Thread-6:5160][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/img/icon-changelink.svg]
+[2022-03-10 18:40:21,575][Thread-8:14268][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/img/icon-addlink.svg]
+[2022-03-10 18:40:21,576][Thread-7:24184][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/css/responsive.css]
+[2022-03-10 18:40:23,244][Thread-7:24184][task_id:django.request][log.py:222][WARNING][Not Found: /static/admin/js/urlify.js]
+[2022-03-10 18:40:38,366][MainThread:13184][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 18:40:44,576][Thread-2:9972][task_id:django.request][log.py:222][ERROR][Internal Server Error: /admin/mysite/article/add/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\loader_tags.py", line 188, in render
+    return template.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 992, in render
+    return render_value_in_context(output, context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 971, in render_value_in_context
+    value = str(value)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\html.py", line 373, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\forms\boundfield.py", line 33, in __str__
+    return self.as_widget()
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\forms\boundfield.py", line 92, in as_widget
+    return widget.render(
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\ckeditor\widgets.py", line 114, in render
+    renderer.render(
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\forms\renderers.py", line 30, in render
+    template = self.get_template(template_name)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\forms\renderers.py", line 36, in get_template
+    return self.engine.get_template(template_name)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\backends\django.py", line 36, in get_template
+    reraise(exc, self)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+[2022-03-10 18:48:04,513][MainThread:11140][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 18:48:24,525][Thread-1:20872][task_id:django.request][log.py:222][ERROR][Internal Server Error: /admin/mysite/article/add/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\loader_tags.py", line 188, in render
+    return template.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 992, in render
+    return render_value_in_context(output, context)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\base.py", line 971, in render_value_in_context
+    value = str(value)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\html.py", line 373, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\forms\boundfield.py", line 33, in __str__
+    return self.as_widget()
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\forms\boundfield.py", line 92, in as_widget
+    return widget.render(
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\ckeditor\widgets.py", line 114, in render
+    renderer.render(
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\forms\renderers.py", line 30, in render
+    template = self.get_template(template_name)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\forms\renderers.py", line 36, in get_template
+    return self.engine.get_template(template_name)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\backends\django.py", line 36, in get_template
+    reraise(exc, self)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+[2022-03-10 18:50:26,551][MainThread:20088][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 18:50:52,504][MainThread:20088][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\myblog\settings.py changed, reloading.]
+[2022-03-10 18:50:53,286][MainThread:15244][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 19:03:13,284][MainThread:15244][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\myblog\settings.py changed, reloading.]
+[2022-03-10 19:03:14,093][MainThread:27092][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 19:05:33,904][Thread-4:24708][task_id:django.request][log.py:222][WARNING][Not Found: /media/]
+[2022-03-10 19:05:36,568][Thread-4:24708][task_id:django.request][log.py:222][ERROR][Internal Server Error: /read/1/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\mysite\views.py", line 34, in read
+    comments = TComment.objects.filter(
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\db\models\query.py", line 904, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\db\models\query.py", line 923, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\db\models\sql\query.py", line 1354, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\db\models\sql\query.py", line 1381, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\db\models\sql\query.py", line 1254, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\db\models\sql\query.py", line 1088, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\db\models\sql\query.py", line 1486, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'article_id' into field. Choices are: body, child_comments, create, id, level, lft, parent, parent_id, reply_to, reply_to_id, rght, tree_id, user, user_id
+[2022-03-10 19:05:52,556][Thread-4:24708][task_id:django.request][log.py:222][ERROR][Internal Server Error: /read/1/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\mysite\views.py", line 34, in read
+    comments = TComment.objects.filter(
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\db\models\query.py", line 904, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\db\models\query.py", line 923, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\db\models\sql\query.py", line 1354, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\db\models\sql\query.py", line 1381, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\db\models\sql\query.py", line 1254, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\db\models\sql\query.py", line 1088, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\db\models\sql\query.py", line 1486, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'article_id' into field. Choices are: body, child_comments, create, id, level, lft, parent, parent_id, reply_to, reply_to_id, rght, tree_id, user, user_id
+[2022-03-10 19:11:25,181][MainThread:27092][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\mysite\views.py changed, reloading.]
+[2022-03-10 19:11:25,953][MainThread:10564][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 19:11:43,084][Thread-1:16036][task_id:django.request][log.py:222][ERROR][Internal Server Error: /comment/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\django_blog-master\django_blog-master\comment\views.py", line 15, in comment
+    models.Comment.objects.create(article_id=article_id, parent_id=parent, reply_to_id=reply_to, user_id=user,
+AttributeError: module 'comment.models' has no attribute 'Comment'
+[2022-03-10 19:13:19,070][MainThread:10564][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\comment\views.py changed, reloading.]
+[2022-03-10 19:13:19,832][MainThread:21948][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 19:14:38,440][MainThread:21948][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\comment\views.py changed, reloading.]
+[2022-03-10 19:14:39,202][MainThread:20896][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 19:15:17,483][MainThread:20896][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\comment\views.py changed, reloading.]
+[2022-03-10 19:15:18,238][MainThread:24192][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 19:18:55,500][MainThread:24192][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\myblog\settings.py changed, reloading.]
+[2022-03-10 19:18:56,272][MainThread:11104][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 20:14:26,110][MainThread:11104][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\myblog\settings.py changed, reloading.]
+[2022-03-10 20:14:26,889][MainThread:24904][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 20:15:25,326][MainThread:24904][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\myblog\settings.py changed, reloading.]
+[2022-03-10 20:15:26,050][MainThread:21344][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 20:21:43,375][MainThread:23936][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 20:25:02,015][MainThread:16524][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 20:25:37,671][MainThread:20220][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 20:27:24,633][MainThread:22200][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]

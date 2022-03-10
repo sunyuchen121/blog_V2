@@ -2,7 +2,7 @@ import logging
 
 from django.shortcuts import render, redirect
 from .models import Article, Link, Message, Diary
-from comment.models import TComment
+from comment.models import TComment, Cccomment
 from django.db.models import Count
 import pickle
 from comment.forms import CommentForm
@@ -31,7 +31,7 @@ def read(request, id):
     article = Article.objects.get(id=id)  # 单独获取年月日的操作在前端实现
     article.read += 1
     article.save()
-    comments = TComment.objects.filter(
+    comments = Cccomment.objects.filter(
         article_id=id).values(
         'body',
         'createtime',
