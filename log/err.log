@@ -550,3 +550,290 @@ Traceback (most recent call last):
   File "D:\django_blog-master\django_blog-master\comment\views.py", line 15, in comment
     models.Comment.objects.create(article_id=article_id, parent_id=parent, reply_to_id=reply_to, user_id=user,
 AttributeError: module 'comment.models' has no attribute 'Comment'
+[2022-03-10 20:46:21,887][Thread-1:18524][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 20:46:49,946][Thread-1:25232][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 20:47:09,286][Thread-1:1472][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 20:47:30,120][Thread-1:23788][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 20:48:17,935][Thread-1:9004][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 20:49:38,745][Thread-1:264][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 20, in send_mobile_msg
+    message, phone = data.get("meassage"), data.get("phone")
+AttributeError: 'bytes' object has no attribute 'get'
+[2022-03-10 20:50:05,378][Thread-1:15608][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    raise ValueError(
+ValueError: The view openapi.views.send_mobile_msg didn't return an HttpResponse object. It returned None instead.
+[2022-03-10 21:06:36,757][Thread-1:17440][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/getToken/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:07:05,535][Thread-1:17440][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/getToken/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:07:40,083][Thread-1:26576][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/getToken]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:07:40,942][Thread-1:26576][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/getToken]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:07:56,259][Thread-1:21348][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/getToken]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:09:28,281][Thread-1:21348][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/getToken]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:11:37,289][Thread-1:19036][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/getToken]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:11:49,373][Thread-1:15632][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/getToken]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:15:07,012][Thread-1:18844][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 33, in send_mobile_msg
+    message, phone = data.get("meassage"), data.get("phone")
+AttributeError: 'bytes' object has no attribute 'get'
+[2022-03-10 21:16:25,930][Thread-1:8812][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 32, in send_mobile_msg
+    message, phone = data.get("meassage"), data.get("phone")
+AttributeError: 'bytes' object has no attribute 'get'
+[2022-03-10 21:17:27,452][Thread-1:19752][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:18:51,489][Thread-1:22312][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 39, in send_mobile_msg
+    if rep.get("result").get("success") is not True:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:19:24,397][Thread-1:22312][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 39, in send_mobile_msg
+    if rep.get("result").get("success") is not True:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:19:36,656][Thread-1:22312][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 39, in send_mobile_msg
+    if rep.get("result").get("success") is not True:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:22:41,134][Thread-1:9584][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 36, in send_mobile_msg
+    if rep.get("result").get("success") is not True:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:22:57,742][Thread-1:22112][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 36, in send_mobile_msg
+    if rep.get("result").get("success") is not True:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:23:11,564][Thread-1:22112][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 36, in send_mobile_msg
+    if rep.get("result").get("success") is not True:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:23:39,998][Thread-1:11340][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 37, in send_mobile_msg
+    if rep.get("result").get("success") is not True:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:24:07,299][Thread-1:9576][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 36, in send_mobile_msg
+    print(rep.get("result").get("success"))
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:24:14,283][Thread-1:9576][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 36, in send_mobile_msg
+    print(rep.get("result").get("success"))
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:24:48,154][Thread-1:17532][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 37, in send_mobile_msg
+    if rep.get("result").get("success") is not True:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:25:34,106][Thread-1:11160][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 37, in send_mobile_msg
+    if rep.get("result").get("success") is not True:
+AttributeError: 'str' object has no attribute 'get'

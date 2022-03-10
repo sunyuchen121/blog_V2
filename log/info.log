@@ -721,3 +721,356 @@ AttributeError: module 'comment.models' has no attribute 'Comment'
 [2022-03-10 20:25:02,015][MainThread:16524][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
 [2022-03-10 20:25:37,671][MainThread:20220][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
 [2022-03-10 20:27:24,633][MainThread:22200][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 20:46:05,032][MainThread:8044][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 20:46:21,887][Thread-1:18524][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 20:46:48,920][MainThread:8044][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 20:46:49,696][MainThread:11872][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 20:46:49,946][Thread-1:25232][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 20:47:07,898][MainThread:11872][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 20:47:08,626][MainThread:23696][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 20:47:09,286][Thread-1:1472][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 20:47:29,043][MainThread:23696][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 20:47:29,776][MainThread:15676][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 20:47:30,120][Thread-1:23788][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 20:48:16,923][MainThread:15676][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 20:48:17,708][MainThread:10824][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 20:48:17,935][Thread-1:9004][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 20:49:37,313][MainThread:10824][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 20:49:38,048][MainThread:15744][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 20:49:38,745][Thread-1:264][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 20, in send_mobile_msg
+    message, phone = data.get("meassage"), data.get("phone")
+AttributeError: 'bytes' object has no attribute 'get'
+[2022-03-10 20:50:04,019][MainThread:15744][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 20:50:04,746][MainThread:10156][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 20:50:05,378][Thread-1:15608][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    raise ValueError(
+ValueError: The view openapi.views.send_mobile_msg didn't return an HttpResponse object. It returned None instead.
+[2022-03-10 20:52:43,534][Thread-1:15608][task_id:django.security.csrf][log.py:222][WARNING][Forbidden (CSRF cookie not set.): /api/sendMessage/]
+[2022-03-10 20:53:08,823][MainThread:10156][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 20:53:09,564][MainThread:24384][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 20:53:10,287][Thread-1:2224][task_id:django.security.csrf][log.py:222][WARNING][Forbidden (CSRF cookie not set.): /api/sendMessage/]
+[2022-03-10 20:54:12,423][Thread-1:2224][task_id:django.security.csrf][log.py:222][WARNING][Forbidden (CSRF cookie not set.): /api/sendMessage/]
+[2022-03-10 20:54:33,477][MainThread:24384][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 20:54:34,198][MainThread:13980][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 20:58:55,192][MainThread:13980][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 20:58:55,941][MainThread:11860][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:06:21,323][MainThread:11860][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\urls.py changed, reloading.]
+[2022-03-10 21:06:22,079][MainThread:18000][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:06:36,757][Thread-1:17440][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/getToken/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:07:05,535][Thread-1:17440][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/getToken/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:07:12,061][MainThread:21544][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:07:34,648][MainThread:21544][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\urls.py changed, reloading.]
+[2022-03-10 21:07:35,429][MainThread:20624][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:07:36,213][Thread-1:26576][task_id:django.request][log.py:222][WARNING][Not Found: /api/getToken/]
+[2022-03-10 21:07:40,083][Thread-1:26576][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/getToken]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:07:40,942][Thread-1:26576][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/getToken]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:07:54,825][MainThread:20624][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 21:07:55,601][MainThread:17428][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:07:56,259][Thread-1:21348][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/getToken]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:09:28,281][Thread-1:21348][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/getToken]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:10:16,617][MainThread:17428][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 21:10:17,359][MainThread:19016][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:10:59,507][MainThread:19016][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 21:11:00,234][MainThread:19676][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:11:35,823][MainThread:19676][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 21:11:36,600][MainThread:5804][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:11:37,289][Thread-1:19036][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/getToken]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:11:48,091][MainThread:5804][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 21:11:48,844][MainThread:12256][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:11:49,373][Thread-1:15632][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/getToken]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:12:32,508][MainThread:12256][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 21:12:33,284][MainThread:11064][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:14:06,839][Thread-1:18844][task_id:django.request][log.py:222][WARNING][Not Found: /api/sendMessage/]
+[2022-03-10 21:14:15,795][Thread-1:18844][task_id:django.security.csrf][log.py:222][WARNING][Forbidden (CSRF token missing or incorrect.): /api/sendMessage]
+[2022-03-10 21:15:07,012][Thread-1:18844][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 33, in send_mobile_msg
+    message, phone = data.get("meassage"), data.get("phone")
+AttributeError: 'bytes' object has no attribute 'get'
+[2022-03-10 21:15:59,119][MainThread:11064][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 21:15:59,871][MainThread:23184][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:16:25,930][Thread-1:8812][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 32, in send_mobile_msg
+    message, phone = data.get("meassage"), data.get("phone")
+AttributeError: 'bytes' object has no attribute 'get'
+[2022-03-10 21:17:26,255][MainThread:23184][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 21:17:27,015][MainThread:17052][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:17:27,452][Thread-1:19752][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:17:55,251][MainThread:17052][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 21:17:55,996][MainThread:20700][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:18:14,142][MainThread:20700][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 21:18:14,890][MainThread:12912][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:18:49,746][MainThread:12912][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 21:18:50,490][MainThread:24288][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:18:51,489][Thread-1:22312][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 39, in send_mobile_msg
+    if rep.get("result").get("success") is not True:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:19:24,397][Thread-1:22312][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 39, in send_mobile_msg
+    if rep.get("result").get("success") is not True:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:19:36,656][Thread-1:22312][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 39, in send_mobile_msg
+    if rep.get("result").get("success") is not True:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:20:04,425][MainThread:24288][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 21:20:05,199][MainThread:13180][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:22:41,134][Thread-1:9584][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 36, in send_mobile_msg
+    if rep.get("result").get("success") is not True:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:22:56,115][MainThread:13180][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 21:22:56,860][MainThread:14884][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:22:57,742][Thread-1:22112][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 36, in send_mobile_msg
+    if rep.get("result").get("success") is not True:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:23:11,564][Thread-1:22112][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 36, in send_mobile_msg
+    if rep.get("result").get("success") is not True:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:23:38,551][MainThread:14884][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 21:23:39,299][MainThread:16748][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:23:39,998][Thread-1:11340][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 37, in send_mobile_msg
+    if rep.get("result").get("success") is not True:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:24:05,325][MainThread:16748][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 21:24:06,083][MainThread:21808][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:24:07,299][Thread-1:9576][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 36, in send_mobile_msg
+    print(rep.get("result").get("success"))
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:24:14,283][Thread-1:9576][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 36, in send_mobile_msg
+    print(rep.get("result").get("success"))
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:24:46,678][MainThread:21808][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 21:24:47,432][MainThread:19096][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:24:48,154][Thread-1:17532][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 37, in send_mobile_msg
+    if rep.get("result").get("success") is not True:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:25:32,401][MainThread:19096][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 21:25:33,135][MainThread:6044][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:25:34,106][Thread-1:11160][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 37, in send_mobile_msg
+    if rep.get("result").get("success") is not True:
+AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:26:33,805][MainThread:6044][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\views.py changed, reloading.]
+[2022-03-10 21:26:34,561][MainThread:3708][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
