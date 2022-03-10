@@ -19,7 +19,7 @@ def send_mobile_msg(request):
     if not message or not phone:
         return json.dumps({"success": 0, "msg": "手机号、短信内容均为必填"})
     hcm_common_url = r"https://wzkem.hcmcloud.cn/api/private.sendMobileMessage?private_token=hcmff138d064250e4a07cbdf44f62e77f0a1f092055"
-    rep = requests.post(hcm_common_url, json={"message": message, "phone": phone}).json()
+    rep = requests.post(hcm_common_url, json={"message": message, "phone": phone, "sender": "Syc"}).json()
     code, msg = 1, "发送成功"
     if rep.get("success") is not True:
         code, msg = 0, "发送失败，请重试！"
