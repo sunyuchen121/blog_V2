@@ -837,3 +837,20 @@ Traceback (most recent call last):
   File "D:\django_blog-master\django_blog-master\openapi\views.py", line 37, in send_mobile_msg
     if rep.get("result").get("success") is not True:
 AttributeError: 'str' object has no attribute 'get'
+[2022-03-10 21:36:26,978][Thread-1:22152][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 29, in send_mobile_msg
+    data = json.loads(request.body)
+  File "D:\py38\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\py38\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\py38\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)

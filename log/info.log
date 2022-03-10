@@ -1088,3 +1088,30 @@ AttributeError: 'str' object has no attribute 'get'
 [2022-03-10 21:31:29,479][Thread-2:14968][task_id:django.request][log.py:222][WARNING][Not Found: /media/]
 [2022-03-10 21:31:37,747][Thread-1:14076][task_id:django.request][log.py:222][WARNING][Not Found: /api/sendMessage/]
 [2022-03-10 21:31:43,397][Thread-1:14076][task_id:root][views.py:30][INFO][{'message': '能收到短信吗?', 'phone': '15621435075'}]
+[2022-03-10 21:36:23,961][MainThread:19700][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\urls.py changed, reloading.]
+[2022-03-10 21:36:24,718][MainThread:19720][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:36:26,978][Thread-1:22152][task_id:django.request][log.py:222][ERROR][Internal Server Error: /api/sendMessage/]
+Traceback (most recent call last):
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\django_blog-master\django_blog-master\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\django_blog-master\django_blog-master\openapi\views.py", line 29, in send_mobile_msg
+    data = json.loads(request.body)
+  File "D:\py38\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "D:\py38\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\py38\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2022-03-10 21:36:37,369][MainThread:19720][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\urls.py changed, reloading.]
+[2022-03-10 21:36:38,122][MainThread:12060][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:36:43,999][MainThread:12060][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\urls.py changed, reloading.]
+[2022-03-10 21:36:44,742][MainThread:8492][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:36:46,237][Thread-1:2924][task_id:django.request][log.py:222][WARNING][Not Found: /api/sendMessage/]
+[2022-03-10 21:36:51,790][MainThread:8492][task_id:django.utils.autoreload][autoreload.py:222][INFO][D:\django_blog-master\django_blog-master\openapi\urls.py changed, reloading.]
+[2022-03-10 21:36:52,540][MainThread:15636][task_id:django.utils.autoreload][autoreload.py:598][INFO][Watching for file changes with StatReloader]
+[2022-03-10 21:36:55,168][Thread-1:21640][task_id:django.request][log.py:222][WARNING][Not Found: /api/sendMessage/]
