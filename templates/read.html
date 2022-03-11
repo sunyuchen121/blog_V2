@@ -1,0 +1,234 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width" />
+    <title>文章阅读</title>
+    <link rel="stylesheet" href="{% static "font-awesome/css/font-awesome.min.css"%}">
+    <link rel="stylesheet" href="{% static "layui/css/layui.css"%}" />
+    <link rel="stylesheet" href="{% static "css/master.css"%}" />
+    <link rel="stylesheet" href="{% static "css/gloable.css"%}" />
+    <link rel="stylesheet" href="{% static "css/nprogress.css"%}" />
+    <link rel="stylesheet" href="{% static "css/message.css"%}" />
+    <link rel="stylesheet" href="{% static "css/blog.css"%}" />
+    <script src="{% static 'ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'prism/prism.css' %}">
+
+
+</head>
+<body>
+    <div class="header">
+    </div>
+    <header class="gird-header">
+        <div class="header-fixed">
+            <div class="header-inner">
+                <a href="{% url 'article_list' %}" class="header-logo" id="logo">Syc</a>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="/index/">首页</a></li>
+                        <li><a href="/article/">博客</a></li>
+                        <li><a href="/message/">留言</a></li>
+                        <li><a href="/link/">友链</a></li>
+                        <li><a href="/diary/">日记</a></li>
+                        <li><a href="/about/">关于我</a></li>
+                    </ul>
+                </nav>
+                {% if user.is_authenticated %}
+
+                    <a href="/userprofile/logout/" class="blog-user" title="点击退出登陆">
+                        {{ user.username }}
+                    </a>
+                {% else %}
+                    <a href="/userprofile/login/" class="blog-user">
+                        登录
+                    </a>
+                {% endif %}
+                <a class="phone-menu">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="doc-container" id="doc-container">
+        <div class="container-fixed">
+            <div class="col-content" style="width:100%">
+                <div class="inner">
+                    <article class="article-list">
+                        <input type="hidden" value="@Model.BlogTypeID" id="blogtypeid" />
+                        <section class="article-item">
+                            <aside class="title" style="line-height:1.5;">
+                                <h4>{{ article.title }}</h4>
+                                <p class="fc-grey fs-14">
+                                    <small>
+                                        作者：<a target="_blank" class="fc-link">Syc</a>
+                                    </small>
+                                    <small class="ml10">围观群众：<i class="readcount">{{ article.read }}</i></small>
+                                    <small class="ml10">更新于 <label>{{ article.update }}</label> </small>
+                                </p>
+                            </aside>
+                            <div class="time mt10" style="padding-bottom:0;">
+                                <span class="day">{{ article.create | date:"d" }}</span>
+                                <span class="month fs-18">{{ article.create | date:"m" }}<small class="fs-14">月</small></span>
+                                <span class="year fs-18">{{ article.create | date:"Y" }}</span>
+                            </div>
+                            <div class="content artiledetail" style="border-bottom: 1px solid #e1e2e0; padding-bottom: 20px;">
+                                <p style="word-wrap:break-word; word-break:normal;">{{ article.body|safe }}</p>
+                                <div class="copyright mt20">
+                                    <p class="f-toe fc-black">
+                                        非特殊说明，本文版权归 Syc 所有，转载请注明出处.
+                                    </p>
+                                    <p class="f-toe">
+                                        本文标题：
+                                        <a href="javascript:void(0)" class="r-title">{{ article.title }}</a>
+                                    </p>
+                                    <p class="f-toe">
+                                        本文网址：
+                                        <a href="#">{{ url }}</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="bdsharebuttonbox share" data-tag="share_1">
+                                <ul>
+                                    <li class="f-praise"><span><a class="s-praise"></a></span></li>
+                                    <li class="f-weinxi"><a class="s-weinxi" data-cmd="weixin"></a></li>
+                                    <li class="f-sina"><a class="s-sina" data-cmd="tsina"></a></li>
+                                    <li class="f-qq"><i class="s-sina"></i></li>
+                                    <li class="f-qzone"><a class="s-qzone" data-cmd="qzone"></a></li>
+                                </ul>
+                            </div>
+                            <div class="f-cb"></div>
+                            <div class="mt20 f-fwn fs-24 fc-grey comment" style="border-top: 1px solid #e1e2e0; padding-top: 20px;">
+                            </div>
+                                <!-- 发表评论 -->
+                            <fieldset class="layui-elem-field layui-field-title">
+                                <legend>发表评论</legend>
+                                <div class="layui-field-box">
+
+                                    <div class="leavemessage" style="text-align:initial">
+                                        {% if user.is_authenticated %}
+
+                                        <form class="layui-form blog-editor" action="/comment/" method="post">
+
+                                            {% csrf_token %}
+
+
+                                            <input type="hidden" name="article_id" id="article_id" value={{ article.id }}>
+                                            <div class="layui-form-item">
+                                                <textarea type="text" class="form-control" id="body" name="body"  style="resize:none;margin: 0px; width: 1200px; height: 206px; border:solid 1px rgb(220,220,220);" placeholder="对于本文的评价在此输入"></textarea>
+
+                                            </div>
+
+                                            <p style="color: red"> {{ error }}</p>
+                                            <div class="layui-form-item">
+                                                <button class="layui-btn" lay-submit="formLeaveMessage" lay-filter="formLeaveMessage">提交评论</button>
+                                            </div>
+                                        </form>
+                                        {% else %}
+                                        <strong>请点击右上角登陆后评论</strong>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <ul class="blog-comment" id="blog-comment" page-count="3">
+                                {%  for pcomment in pcomments %}
+                                <li>
+
+                                    <div class="comment-parent">
+                                        <a name="remark-243"></a>
+                                        <img src="/static/image/message.png">
+                                        <div class="info">
+                                            <span class="username">{{ pcomment.user__username }}</span>
+                                        </div>
+
+                                        <div class="comment-content">
+                                            <pre style="white-space: pre-wrap;word-wrap: break-word;font-size: 15px; font-family:'SimSun';">{{ pcomment.body|safe }}</pre>
+                                        </div>
+                                        <p class="info info-footer">
+                                            <span class="comment-time">{{ pcomment.createtime }}</span>
+                                        <a href="javascript:;" class="btn-reply" data-targetid={{ pcomment.user_id }} data-targetname={{ pcomment.user__username }}>回复</a>
+                                        </p>
+                                    </div>
+                                    {% for ccomment in ccomments %}
+                                        {% if ccomment.parent_id == pcomment.id %}
+                                    <hr>
+                                    <div class="comment-child">
+                                        <a name="reply-214"></a>
+                                        <img src="/static/image/message.png">
+                                        <div class="info">
+                                            <span class="username">{{ ccomment.user__username }}</span>
+                                            <span style="padding-right:0;margin-left:-5px;">回复</span>
+                                            <span class="username">{{ ccomment.reply_to__username }}</span>
+                                            <pre style="white-space: pre-wrap;word-wrap: break-word;">{{ ccomment.body|safe }}</pre>
+                                        </div>
+                                        <p class="info">
+                                            <span class="comment-time">{{ ccomment.createtime }}</span>
+                                            <a href="javascript:;" class="btn-reply" data-targetid={{ ccomment.user_id }} data-targetname={{ ccomment.user__username }}>回复</a>
+                                        </p>
+                                    </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                    <div class="replycontainer layui-hide">
+                                        {% if user.is_authenticated %}
+                                        <form class="layui-form" action="/comment/" method="post">
+                                                {% csrf_token %}
+                                                <input type="hidden" name="parent" value={{ pcomment.id }}>
+                                                <input type="hidden" name="article_id" value={{ article.id }}>
+                                                <input type="hidden" name="targetUserId" value={{targetId}}>
+                                                <div class="layui-form-item">
+                                                    <textarea id="body" name="body" lay-verify="body" class="layui-textarea" style="min-height:80px;width: 100%"></textarea>
+
+                                                    <p style="color: red"> {{ error2 }}</p>
+
+                                                </div>
+
+                                                <div class="layui-form-item">
+                                                    <button class="layui-btn layui-btn-xs" lay-submit="formReply" lay-filter="formReply">提交</button>
+                                                </div>
+                                        {% else %}
+                                            <strong>请点击右上角登陆后回复评论</strong>
+                                        {% endif %}
+                                        </form>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="grid-footer">
+        <div class="footer-fixed">
+            <div class="copyright">
+                <div class="info">
+                    <div class="contact">
+                        <a href="https://github.com/sunyuchen121" class="github" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="tencent://QQInterLive/?Cmd=2&Uin=1746950509" class="qq" target="_blank" title="930054439"><i class="fa fa-qq"></i></a>
+                        <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=WWhubW9gbGlsaWAZKCh3OjY0" class="email" target="_blank" title="930054439@qq.com"><i class="fa fa-envelope"></i></a>
+                        <a  class="weixin"><i class="fa fa-weixin"></i></a>
+                    </div>
+                    <p class="mt05">
+                        Copyright &copy; 2018-2018 燕十三 All Rights Reserved V.3.1.3 蜀ICP备18008600号
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static "layui/layui.js"%}"></script>
+    <script src="{% static "js/yss/gloable.js"%}"></script>
+    <script src="{% static "js/plugins/nprogress.js"%}"></script>
+    <script src="{% static "js/pagecomment.js"%}"></script>
+    <script>NProgress.start();</script>
+    <script> 
+        window.onload = function () {
+            NProgress.done();
+        };
+    </script>
+</body>
+</html>
