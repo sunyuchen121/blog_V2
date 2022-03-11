@@ -59,11 +59,11 @@
                             <div class="single-news">
                                 <div class="news-head">
                                     <img src="/static/image/1.jpg">
-                                    <a href="/read/{{ article.id }}" class="link"><i class="fa fa-link"></i></a>
+                                    <a href="/read/art_{{ article.id }}" class="link"><i class="fa fa-link"></i></a>
                                 </div>
                                 <div class="news-content">
                                     <h4>
-                                        <a href="#">
+                                        <a href="/read/art_{{ article.id }}">
                                             {{ article.title }}
                                         </a>
                                     </h4>
@@ -73,7 +73,7 @@
                                     <p style="word-wrap:break-word; word-break:normal;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3; overflow: hidden;">
                                         {{ article.know }}
                                     </p>
-                                    <a href="/read/{{ article.id }}" class="btn">
+                                    <a href="/read/art_{{ article.id }}" class="btn">
                                         阅读全文
                                     </a>
                                 </div>

@@ -16,10 +16,10 @@ def comment(request):
             models.Cccomment.objects.create(article_id=article_id, parent_id=parent, reply_to_id=reply_to, user_id=user,
                                               body=body)
 
-            return redirect('/read/' + article_id)
+            return redirect('/read/art_' + article_id)
         elif not data['body'] and not 'parent' in data:
             article = data['article_id']
-            return redirect('/read/' + article + '/?key=1')
+            return redirect('/read/art_' + article + '/?key=1')
         elif not data['body'] and 'parent' in data:
             article = request.POST['article_id']
-            return redirect('/read/' + article + '/?key=2')
+            return redirect('/read/art_' + article + '/?key=2')

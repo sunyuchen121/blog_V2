@@ -61,16 +61,16 @@
 						<section class="article-item zoomIn article">
 							<h5 class="title">       
 								<span class="fc-blue">【{{ article.state }}】</span>
-								<a href="/read/{{ article.id }}">{{ article.title }}</a>
+								<a href="/read/art_{{ article.id }}">{{ article.title }}</a>
 							</h5>
 							<div class="content">       
-								<a href="/read/{{ article.id }}" class="cover img-light">
+								<a href="/read/art_{{ article.id }}" class="cover img-light">
 									<img src='{{ MEDIA_URL }}{{ article.picture_url }}'>
 								</a>
 								<pre style="white-space: pre-wrap;word-wrap: break-word;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 5; overflow: hidden;">{{ article.know }}</pre>
 							</div>   
 							<div class="read-more">       
-								<a href="/read/{{ article.id }}" class="fc-black f-fwb">阅读全文</a>
+								<a href="/read/art_{{ article.id }}" class="fc-black f-fwb">阅读全文</a>
 							</div>    
 							<aside class="f-oh footer">       
 								<div class="f-fl tags">           
@@ -126,7 +126,7 @@
 					    <div class="inner">
 					        <ul class="hot-list-article">
                                 {% for hot in hots%}
-					                <li> <a href="/read/{{ hot.id }}">{{ hot.title }}</a></li>
+					                <li> <a href="/read/art_{{ hot.id }}">{{ hot.title }}</a></li>
                                 {% endfor %}
 					        </ul>
 					    </div>
@@ -136,7 +136,7 @@
 					    <div class="inner">
 					        <ul class="hot-list-article">
                                     {% for i in recommend %}
-					                <li> <a href="/read/{{ i.id }}">{{ i.title }}</a></li>
+					                <li> <a href="/read/art_{{ i.id }}">{{ i.title }}</a></li>
                                     {% endfor %}
 					        </ul>
 					    </div>
