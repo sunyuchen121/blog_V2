@@ -8,16 +8,15 @@ from django.shortcuts import render
 from django.middleware.csrf import get_token
 # Create your views here.
 
+LOGGER = logging.getLogger("info")
 
-
-# /api/gettoken  这个是地址 url路由的配置就是这个，我下面就不介绍怎么配置路由了，比较简单
 def getToken(request):
     token = django.middleware.csrf.get_token(request)
     return JsonResponse({'success': 1, "token": token})
 
 
 def get_all_articels(request):
-    return json.dumps({})
+    return JsonResponse({})
 
 
 def send_mobile_msg(request):
@@ -27,7 +26,6 @@ def send_mobile_msg(request):
     :return:
     """
     data = json.loads(request.body)
-    logging.info(data)
     message, phone = data.get("message"), data.get("phone")
     if not message or not phone:
         return JsonResponse({"success": 0, "msg": "手机号、短信内容均为必填"})

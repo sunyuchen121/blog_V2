@@ -19,6 +19,7 @@ from mysite import views
 from comment.views import comment
 from django.conf import settings
 from django.conf.urls.static import static
+from common.functions import get_request_ip
 
 urlpatterns = [
     path('admin/', admin.site.urls),
