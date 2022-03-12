@@ -17,7 +17,7 @@ def comment(request):
                                               body=body)
 
             return redirect('/read/art_' + article_id)
-        elif not data['body'] and not 'parent' in data:
+        elif not data['body'] and 'parent' not in data:
             article = data['article_id']
             return redirect('/read/art_' + article + '/?key=1')
         elif not data['body'] and 'parent' in data:
