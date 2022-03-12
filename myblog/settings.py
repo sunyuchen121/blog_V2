@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'userprofile',
     'openapi',
     'ckeditor',
-    'common_util'
+    'common_util',
 ]
 
 MIDDLEWARE = [

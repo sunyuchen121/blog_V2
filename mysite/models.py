@@ -6,6 +6,7 @@ from ckeditor.fields import RichTextField
 # Create your models here.
 
 class Article(models.Model):
+    __MODEL__ = "Article"
     Label = (
         ('个人日记', '个人日记'),
         ('python', 'python'),
@@ -37,6 +38,7 @@ class Article(models.Model):
 
 
 class Link(models.Model):
+    __MODEL__ = "Link"
     name = models.CharField(max_length=64)
     about = models.CharField(max_length=128)
     url = models.URLField()
@@ -50,6 +52,7 @@ class Link(models.Model):
 
 
 class Message(models.Model):
+    __MODEL__ = "Message"
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     create = models.DateTimeField(auto_now_add=True)
     body = models.TextField()
@@ -59,6 +62,7 @@ class Message(models.Model):
 
 
 class Diary(models.Model):
+    __MODEL__ = "Message"
     body = models.TextField()
     create = models.DateField(auto_now_add=True)
 
@@ -66,15 +70,3 @@ class Diary(models.Model):
         ordering = ['-create']
         verbose_name = '日记'
         verbose_name_plural = '日记'
-
-
-class OperateRecord(models.Model):
-    dataId = models.IntegerField(default=0)
-    modelName = models.CharField(max_length=64)
-    info = models.TextField()
-    createTime = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        ordering = ['-createTime']
-        verbose_name = "操作记录"
-        verbose_name_plural = "操作记录"
