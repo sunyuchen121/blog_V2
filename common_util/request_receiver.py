@@ -3,7 +3,7 @@ request 信号接收器
 """
 import datetime
 import logging
-from django.core.signals import request_finished, request_started
+from django.core.signals import request_finished, request_started, got_request_exception
 from django.dispatch import receiver
 
 @receiver(request_started)

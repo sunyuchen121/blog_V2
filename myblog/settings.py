@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'comment',
     'userprofile',
     'openapi',
-    'ckeditor'
+    'ckeditor',
+    'common_util'
 ]
 
 MIDDLEWARE = [
@@ -204,7 +205,7 @@ LOGGING = {
             'level': 'INFO',
             'class': 'logging.handlers.RotatingFileHandler',  # 保存到文件，自动切
             'filename': os.path.join(BASE_LOG_DIR, "collect.log"),
-            'maxBytes': 1024 * 1024 * 500,  # 日志大小 500M
+            'maxBytes': 1024 * 1024 * 1024,  # 日志大小 1G
             'backupCount': 5,
             'formatter': 'collect',
             'encoding': "utf-8"
