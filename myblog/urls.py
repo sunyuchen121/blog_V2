@@ -20,6 +20,10 @@ from comment.views import comment
 from django.conf import settings
 from django.conf.urls.static import static
 
+# 在其他地方注册 会出现程序启动前调用模型的错误 所以在根路由下注册信号
+from common_util.model_receiver import *
+from common_util.request_receiver import *
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),

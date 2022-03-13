@@ -1,8 +1,18 @@
 """
-自定义信号
+自定义插件
 """
 
-class pre_edit_data(object):
-    def __init__(self, model, func):
-        self.model = model
-        self.func_ = func
+from .models import OperateRecord
+
+def model_plugins(mark):
+    """操作记录模型插件"""
+    def pre():
+        pass
+
+    def post():
+        pass
+
+    def execute(func):
+        return func
+
+    return execute

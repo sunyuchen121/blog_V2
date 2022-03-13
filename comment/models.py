@@ -7,20 +7,19 @@ from mptt.models import TreeForeignKey, MPTTModel
 
 
 class Cccomment(models.Model):
-    __MODEL__ = "Cccomment"
     article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name='article_comment')
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='my_comment')
     createtime = models.DateTimeField(auto_now_add=True)
     body = RichTextField()
     parent = models.ForeignKey('self', on_delete=models.CASCADE, null=True, blank=True, related_name='child')
     reply_to = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True, related_name='cdreply')
+    extra_property_edit = models.TextField(default="", null=True, blank=True)
 
     class Meta:
         ordering = ['createtime']
 
 
 class TComment(MPTTModel):
-    __MODEL__ = "TComment"
     # 发表评论的用户
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='my_comments')
     # 父评论,如果本评论为父评论,该字段就为空
@@ -31,6 +30,7 @@ class TComment(MPTTModel):
     body = models.TextField()
     # 评论时间
     create = models.DateTimeField(auto_now_add=True)
+    extra_property_edit = models.TextField(default="", null=True, blank=True)
 
     class MPTTMeta:
         order_insertion_by = ['-create']
